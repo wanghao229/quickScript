@@ -24,3 +24,10 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
 ```
+
+
+### kafak
+单个部署：https://www.hangge.com/blog/cache/detail_2791.html 质量高
+
+集群部署：https://www.cnblogs.com/kendoziyu/p/15134041.html 质量高
+
