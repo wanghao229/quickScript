@@ -31,3 +31,9 @@ docker-compose --version
 
 集群部署：https://www.cnblogs.com/kendoziyu/p/15134041.html 质量高
 
+
+
+### hbase
+单个：https://cloud.tencent.com/developer/article/1632053 质量高
+集群：
+
