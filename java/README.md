@@ -2,6 +2,9 @@
 
 ### 参考
 https://www.cnblogs.com/52lxl-top/p/9877202.html
+```
+yum install java-1.8.0-openjdk* -y
+```
 
 
 ### 配置
@@ -29,3 +32,7 @@ echo $JAVA_HOME
 echo $CLASSPATH
 
 ```
+
+
+ 
+
