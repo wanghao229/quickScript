@@ -50,3 +50,4 @@ wget https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/setti
 
 mv -f settings.xml $destDir/conf/settings.xml
 
+
