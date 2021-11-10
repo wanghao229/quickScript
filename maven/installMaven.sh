@@ -43,63 +43,10 @@ source /etc/profile
 
 cp $destDir/conf/settings.{xml,backup."$(date +%Y%m%d-%H%M%S)"}
 
-cat>$destDir/conf/settings.xml<<EOF
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <localRepository/>
-  <interactiveMode/>
-  <usePluginRegistry/>
-  <offline/>
-  <pluginGroups/>
-  <servers/>
-  <mirrors>
-    <mirror>
-    <id>nexus-aliyun</id>
-    <mirrorOf>central</mirrorOf>
-    <name>Nexus aliyun</name>
-    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-    </mirror>
 
-    <mirror>
-      <id>repo1</id>
-      <mirrorOf>central</mirrorOf>
-      <name>central repo</name>
-      <url>http://repo1.maven.org/maven2/</url>
-    </mirror>
-    <mirror>
-     <id>aliyunmaven</id>
-     <mirrorOf>apache snapshots</mirrorOf>
-     <name>阿里云阿帕奇仓库</name>
-     <url>https://maven.aliyun.com/repository/apache-snapshots</url>
-    </mirror>
-  </mirrors>
-  <proxies/>
-  <activeProfiles/>
-  <profiles>
-    <profile>
-        <repositories>
-          <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-          </repository>
-            <repository>
-                <id>MavenCentral</id>
-                <url>http://repo1.maven.org/maven2/</url>
-            </repository>
-            <repository>
-                <id>aliyunmavenApache</id>
-                <url>https://maven.aliyun.com/repository/apache-snapshots</url>
-            </repository>
-        </repositories>
-     </profile>
-  </profiles>
-EOF
+rm -rf settings.xml
+
+wget https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/settings.xml
+
+mv -f settings.xml $destDir/conf/settings.xml
+
