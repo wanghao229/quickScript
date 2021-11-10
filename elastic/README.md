@@ -5,11 +5,16 @@
 
 
 
-### 用户
+### 使用
 ```
 useradd -M -s /sbin/nologin elasticsearch
 chmod -R elasticsearch.elasticsearch elasticsearch
 sudo -u elasticsearch elasticsearch/bin/elasticsearch -d
+```
+```
+vi config/jvm.options
+-Xms256m
+-Xmx256m
 ```
 
 ### 快捷方式
