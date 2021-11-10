@@ -43,5 +43,6 @@ docker-compose --version
 ```
 vi ~/.bashrc
 alias wy='cd /home/wyatt'
+source .bashrc
 ```
 
