@@ -38,3 +38,10 @@ docker-compose --version
 单个：https://cloud.tencent.com/developer/article/1632053 质量高
 集群：
 
+
+### linux
+```
+vi ~/.bashrc
+alias wy='cd /home/wyatt'
+```
+
