@@ -52,5 +52,7 @@ ip地址 主机名
 
 hostname
 
+systemctl restart network
+
 ```
 
