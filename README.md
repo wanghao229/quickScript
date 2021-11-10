@@ -45,4 +45,12 @@ vi ~/.bashrc
 alias wy='cd /home/wyatt'
 source .bashrc
 ```
+```
+vi /etc/hosts
+
+ip地址 主机名
+
+hostname
+
+```
 
