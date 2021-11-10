@@ -9,11 +9,10 @@
 ```
 useradd -M -s /sbin/nologin elasticsearch
 chmod -R elasticsearch.elasticsearch elasticsearch
-
 sudo -u elasticsearch elasticsearch/bin/elasticsearch -d
-
 ```
 
+### 快捷方式
 ```
 vi .bashrc
 sudo -u elasticsearch /usr/share/elasticsearch/bin/elasticsearch -d
