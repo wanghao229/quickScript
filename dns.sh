@@ -22,10 +22,11 @@ EOF
 echo "---------------------------"
 
 
-if [! $extIp ];then
+if [ ! $extIp ]; then
   echo "请输入外网ip"
   read extIp
+fi
+
 echo "extIp:${extIp}"
 
-echo "${extIp} extIp"
-
+echo "${extIp} extIp" >> $dest
