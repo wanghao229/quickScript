@@ -30,3 +30,8 @@ fi
 echo "extIp:${extIp}"
 
 echo "${extIp} extIp" >> $dest
+
+echo "---------------------------"
+
+cat $dest
+
