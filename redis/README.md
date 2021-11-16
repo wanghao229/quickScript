@@ -4,7 +4,7 @@
 * https://blog.csdn.net/l1028386804/article/details/105681536 【质量中】
 
 
-### 
+### 客户端
 * yum install redis
 
 
