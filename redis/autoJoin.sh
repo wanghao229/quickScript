@@ -10,13 +10,12 @@ pwd
 whoami
 last root
 
-# echo "dir:$(pwd)"
-
 echo "查看redis 集群信息"
 
 redis-cli -h 1.116.17.54 -p 6000
 
 cluster nodes
+
 
 cluster info
 
@@ -28,4 +27,3 @@ get 234
 EOF
 
 echo "退出Docker容器($dockerId)"
-
