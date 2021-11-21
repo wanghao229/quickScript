@@ -19,4 +19,12 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.1.1/node_e
 ```
 https://grafana.com/oss/prometheus/exporters/node-exporter/assets/node_rules.yaml
 https://grafana.com/oss/prometheus/exporters/node-exporter/assets/node_alerts.yaml
+
+```
+
+```
+rule_files:
+  - "node_rules.yaml"
+  - "node_alerts.yaml"
+  
 ```
