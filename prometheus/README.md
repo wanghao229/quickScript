@@ -2,7 +2,11 @@
 
 ### 安装
 https://www.cnblogs.com/xiao987334176/p/9930517.html
-
+```
+docker pull prom/node-exporter
+docker pull prom/prometheus
+docker pull grafana/grafana
+```
 
 
 ### 安装node-exporter
