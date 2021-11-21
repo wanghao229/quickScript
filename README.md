@@ -7,6 +7,7 @@
 ```
 yum install telnet
 yum install java-1.8.0-openjdk* -y
+yum install tree -y 
 ```
 
 ### ssh
