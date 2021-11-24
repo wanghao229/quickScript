@@ -14,6 +14,18 @@ https://grafana.com/oss/prometheus/exporters/node-exporter/?tab=installation
 ```
 wget https://github.com/prometheus/node_exporter/releases/download/v1.1.1/node_exporter-1.1.1.linux-amd64.tar.gz
 ```
+
+```
+
+docker run -d -p 9100:9100 \
+  -v "/proc:/host/proc:ro" \
+  -v "/sys:/host/sys:ro" \
+  -v "/:/rootfs:ro" \
+  --net="host" \
+  prom/node-exporter
+  
+```
+
 ### 安装Prometheus
 
 ```
