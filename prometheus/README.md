@@ -35,3 +35,11 @@ rule_files:
   - "node_alerts.yaml"
   
 ```
+
+### 安装Prometheus
+```
+docker run  -d \
+  -p 9090:9090 \
+  -v /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  \
+  prom/prometheus
+```
