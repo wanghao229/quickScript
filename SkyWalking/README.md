@@ -33,5 +33,7 @@ storage:
 ```
 
 ### Agent
-* https://dlcdn.apache.org/skywalking/java-agent/8.8.0/apache-skywalking-java-agent-8.8.0.tgz
+```
+ wget https://dlcdn.apache.org/skywalking/java-agent/8.8.0/apache-skywalking-java-agent-8.8.0.tgz --no-check-certificate
+```
  
