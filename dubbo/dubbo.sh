@@ -22,7 +22,7 @@ echo $dest
 echo "s/^[^#].*$hostname.*/#&/"
 
 sed -i "s/^[^#].*$hostname.*/#&/" $dest
-sed -i "s/^#\($ip.*\)/\1/" hosts
+sed -i "s/^#\($ip.*\)/\1/" $dest
 
 #grep -c "$ip" "$dest"
 
@@ -32,3 +32,10 @@ if [ `grep -c "$ip" "$dest"` -eq '0' ];then
 else
   echo "已配置"
 fi
+
+
+echo "------------------------------"
+
+cat $dest
+
+
