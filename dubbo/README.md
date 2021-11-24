@@ -17,3 +17,7 @@ admin.registry.address=zookeeper://127.0.0.1:2181
 admin.config-center=zookeeper://127.0.0.1:2181
 admin.metadata-report.address=zookeeper://127.0.0.1:2181
 ```
+
+### 启动
+> mvn --projects dubbo-admin-server spring-boot:run
+
