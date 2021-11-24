@@ -14,6 +14,8 @@ https://grafana.com/oss/prometheus/exporters/node-exporter/?tab=installation
 ```
 wget https://github.com/prometheus/node_exporter/releases/download/v1.1.1/node_exporter-1.1.1.linux-amd64.tar.gz
 
+### 安装Prometheus
+
 docker run  -d \
   -p 9090:9090 \
   -v /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  \
@@ -36,10 +38,4 @@ rule_files:
   
 ```
 
-### 安装Prometheus
-```
-docker run  -d \
-  -p 9090:9090 \
-  -v /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  \
-  prom/prometheus
-```
+ 
