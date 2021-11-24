@@ -1,9 +1,4 @@
-
-
-### 暴露外网地址
-> sh
-
-
+ 
 ### Dubbo Admin
 https://dubbo.apache.org/zh/docsv2.7/admin/install/admin-console/
 
