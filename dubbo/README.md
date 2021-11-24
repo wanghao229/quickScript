@@ -6,7 +6,7 @@ https://github.com/apache/dubbo-admin
 ```
 git clone https://github.com/apache/dubbo-admin.git /var/tmp/dubbo-admin
 cd /var/tmp/dubbo-admin
-mvn clean package
+mvn clean package -Dmaven.test.skip=true
 
 ```
 
