@@ -17,7 +17,7 @@ echo "配置dns"
 cat >>$dest<<EOF
 101.34.168.240 eureka-server1
 101.34.168.240 eureka-server2
-1.116.17.54 dbhost
+101.34.168.240 dbhost
 101.34.248.75 oauth2Host
 EOF
 
