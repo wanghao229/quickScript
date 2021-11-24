@@ -8,7 +8,7 @@ destDir="/usr/local/apache-maven-3.8.3"
 
 if [ ! -f "$file" ]; then
   echo "开始下载apache-maven-3.8.3-bin.tar.gz"
-  wget https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz --no-check-certificate
+  wget https://archive.apache.org/dist/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz --no-check-certificate
 else
   echo "文件apache-maven-3.8.3-bin.tar.gz已下载"
 fi
