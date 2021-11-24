@@ -13,7 +13,7 @@ echo "ip:${ip}"
 
 echo "------------------------------"
 
-dest="/dest/hosts"
+dest="/etc/hosts"
 
 cp /etc/hosts{,.backup."$(date +%Y%m%d-%H%M%S)"}
 
