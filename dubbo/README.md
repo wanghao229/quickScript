@@ -1,7 +1,8 @@
  
 ### Dubbo Admin
-https://dubbo.apache.org/zh/docsv2.7/admin/install/admin-console/
-https://github.com/apache/dubbo-admin
+* https://dubbo.apache.org/zh/docsv2.7/admin/install/admin-console/
+
+* https://github.com/apache/dubbo-admin
 
 ```
 git clone https://github.com/apache/dubbo-admin.git /var/tmp/dubbo-admin
