@@ -13,6 +13,13 @@ else
   echo "文件$file已下载"
 fi
 
+if [ ! -d "$folder" ]; then
+  echo "解压$file"
+  tar -xvzf $file
+else
+  echo "文件已解压"
+fi
+
 
 if [ ! -d $destDir ]; then
   echo "创建目录 $destDir"
