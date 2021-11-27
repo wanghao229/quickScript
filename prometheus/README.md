@@ -60,3 +60,8 @@ docker run -d \
   grafana/grafana
 ```
  
+
+### 安装 JVM Exporter
+* https://cloud.tencent.com/developer/article/1601717
+
+
