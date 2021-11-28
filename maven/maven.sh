@@ -45,11 +45,18 @@ source /etc/profile
 cp $destDir/conf/settings.{xml,backup."$(date +%Y%m%d-%H%M%S)"}
 
 
-rm -rf settings.xml
 
-wget https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/settings.xml
+settings="settings.xml"
 
-mv -f settings.xml $destDir/conf/settings.xml
+if [ ! -f "$settings" ]; then
+  echo "开始下载$settings"
+  wget https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/settings.xml
+else
+  echo "$settings已下载"
+fi
+
+ 
+cp -f settings.xml $destDir/conf/settings.xml
 
 
 
