@@ -30,11 +30,10 @@ docker run -d -p 9100:9100 \
 
 ```
 docker run  -d \
-  -p 9090:9090 \
+  -p 9091:9090 \
   -v /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  \
-  -v /opt/prometheus/node_rules.yaml:/etc/prometheus/node_rules.yaml  \
-  -v /opt/prometheus/node_alerts.yaml:/etc/prometheus/node_alerts.yaml  \
-  prom/prometheus
+  -v /opt/prometheus:/usr/local/prometheus  \
+  prom/prometheus prometheus
 ```
 
 
