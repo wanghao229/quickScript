@@ -1,6 +1,7 @@
 #/bin/bash
 
 dest="/etc/hosts"
+profile="/etc/profile"
 extIp=$1
 
 echo $dest
@@ -8,10 +9,14 @@ echo $dest
 
 cp $dest{,.backup."$(date +%Y%m%d-%H%M%S)"}
 
+echo "删除 $dest 旧配置文件"
 sed -i "/^[^#].*eureka-server.*/d" $dest
 sed -i "/^[^#].*dbhost.*/d" $dest
 sed -i "/^[^#].*extIp.*/d" $dest
 sed -i "/^[^#].*oauth2Host.*/d" $dest
+
+echo "删除 $profile 旧配置文件"
+sed -i "/^[^#].*extIp.*/d" $profile
 
 echo "配置dns"
 cat >>$dest<<EOF
@@ -32,6 +37,7 @@ fi
 echo "extIp:${extIp}"
 
 echo "${extIp} extIp" >> $dest
+echo "export extIp=${extIp}" >> $profile
 
 echo "---------------------------"
 
