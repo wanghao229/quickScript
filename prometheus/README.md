@@ -64,4 +64,8 @@ docker run -d \
 ### 安装 JVM Exporter
 * https://cloud.tencent.com/developer/article/1601717
 
+### Eureka Discover
+* https://sonicshield.cn/eureka-prometheus-code.html?ivk_sa=1024609v
+
+
 
