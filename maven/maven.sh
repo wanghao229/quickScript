@@ -36,7 +36,7 @@ else
   echo "配置环境变量"
   echo "MAVEN_HOME=/usr/local/apache-maven-3.8.3" >> /etc/profile
   echo "export MAVEN_HOME" >> /etc/profile
-  echo "export PATH=$PATH:$MAVEN_HOME/bin"  >> /etc/profile
+  echo "export PATH=\$PATH:\$MAVEN_HOME/bin"  >> /etc/profile
 fi
 
 source /etc/profile
