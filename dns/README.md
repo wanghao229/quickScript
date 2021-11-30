@@ -25,3 +25,4 @@ docker run -d\
     jpillora/dnsmasq
     
 ```
+> nslookup dbhost 150.158.52.34
