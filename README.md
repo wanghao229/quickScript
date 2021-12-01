@@ -33,6 +33,10 @@ docker-compose --version
 单个部署：https://www.hangge.com/blog/cache/detail_2791.html 质量高
 
 集群部署：https://www.cnblogs.com/kendoziyu/p/15134041.html 质量高
+```
+docker run -itd --name=kafka-manager -p 9000:9000 sheepkiller/kafka-manager
+-e ZK_HOSTS="101.34.168.240:2181" 
+```
 
 
 
