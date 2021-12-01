@@ -19,6 +19,7 @@ docker run -d\
     -p 53:53/udp \
     -p 8080:8080 \
     -v /data/dns/dnsmasq.conf:/etc/dnsmasq.conf \
+    -v /etc/localtime:/etc/localtime \
     --log-opt "max-size=100m" \
     -e "HTTP_USER=admin" \
     -e "HTTP_PASS=123456" \
