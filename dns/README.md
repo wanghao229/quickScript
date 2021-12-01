@@ -22,7 +22,7 @@ docker run -d\
     -v /etc/localtime:/etc/localtime \
     --log-opt "max-size=100m" \
     -e "HTTP_USER=admin" \
-    -e "HTTP_PASS=123456" \
+    -e "HTTP_PASS=wang" \
     jpillora/dnsmasq
     
 ```
