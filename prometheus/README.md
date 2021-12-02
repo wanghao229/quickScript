@@ -68,3 +68,7 @@ docker run -d \
 
 
 
+### Jenkins Metrics
+* https://cloud.tencent.com/developer/article/1622305
+> Prometheus metrics
+
