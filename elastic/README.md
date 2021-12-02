@@ -30,3 +30,7 @@ sudo -u elasticsearch /usr/share/elasticsearch/bin/elasticsearch -d
 ### LogStach
 * https://cloud.tencent.com/developer/article/1703928
 
+
+### Support Matrix
+* https://www.elastic.co/cn/support/matrix#matrix_compatibility
+
