@@ -37,6 +37,12 @@ docker logs -f logstash
 docker cp logstash:/usr/share/logstash /data/elk6/
 mkdir /data/elk6/logstash/config/conf.d
 chmod 777 -R /data/elk6/logstash
+
+docker exec -u 0 -it logstash bash
+
+chmod 644 /var/log/messages
+chmod 644 /var/log/secure
+
 ```
 
 
