@@ -30,6 +30,15 @@ sudo -u elasticsearch /usr/share/elasticsearch/bin/elasticsearch -d
 ### LogStach
 * https://cloud.tencent.com/developer/article/1703928
 
+```
+docker run -d --name=logstash logstash:6.8.20
+docker logs -f logstash
+
+docker cp logstash:/usr/share/logstash /data/elk6/
+mkdir /data/elk6/logstash/config/conf.d
+chmod 777 -R /data/elk6/logstash
+```
+
 
 ### Support Matrix
 * https://www.elastic.co/cn/support/matrix#matrix_compatibility
