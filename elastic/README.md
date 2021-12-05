@@ -1,6 +1,9 @@
 
+### 安装
+安装
+* https://cloud.tencent.com/developer/article/1625296
 
-### 参考
+修改JVM
 * https://www.cnblogs.com/zzhaolei/p/11067786.html
 
 
