@@ -11,6 +11,7 @@ docker run \
   -p 50000:50000 \
   -v jenkins-data:/var/jenkins_home \
   -v /var/run/docker.sock:/var/run/docker.sock \
+  -e JAVA_OPTS='-Xmx256m -Xms256m' \
   jenkins-1121
 ```
 
