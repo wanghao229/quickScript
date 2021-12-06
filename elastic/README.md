@@ -7,7 +7,7 @@
 * https://www.cnblogs.com/zzhaolei/p/11067786.html
 
 Docker
-* docker run --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -d elasticsearch:7.14.2
+* docker run --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms256m -Xmx256m"  -d elasticsearch:7.14.2
 
 
 ### 使用
