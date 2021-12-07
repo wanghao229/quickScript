@@ -63,3 +63,12 @@ systemctl restart network
 
 ```
 
+### mac
+```
+vi .bash_profile
+
+alias doc='cd /Users/a11080178/Documents'
+
+source .bash_profile
+
+```
