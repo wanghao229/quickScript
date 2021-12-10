@@ -23,3 +23,7 @@ mysql -uroot -p -e "select concat('rename table cms_three.',table_name,' to cms.
 sed -i '1d' rename_mysql_name.sql
 
 ```
+
+### 备份策略
+* 本机，远程机器双备份。
+
