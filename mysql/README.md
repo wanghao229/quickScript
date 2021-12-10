@@ -20,4 +20,6 @@ docker run -p 3306:3306 --name mysql \
 ```
 mysql -uroot -p -e "select concat('rename table cms_three.',table_name,' to cms.',table_name,';') from information_schema.TABLES where TABLE_SCHEMA='cms_three';" > rename_mysql_name.sql
 
+sed -i '1d' rename_mysql_name.sql
+
 ```
