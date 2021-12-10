@@ -53,7 +53,7 @@ rule_files:
 ### 安装Grafana
 ```
 docker run -d \
-  -p 3000:3000 \
+  -p 3001:3000 \
   --name=grafana \
   -v /opt/grafana-storage:/var/lib/grafana \
   grafana/grafana
