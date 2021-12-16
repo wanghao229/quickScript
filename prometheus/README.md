@@ -77,6 +77,9 @@ docker run -d \
 
 ### Push GateWay
 * http://qinghua.github.io/prometheus/
+* https://github.com/prometheus/pushgateway/blob/master/README.md
+
+
 ```
 docker run -d \
 --name=pg \
