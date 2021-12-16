@@ -63,6 +63,7 @@ docker run -d \
 ### 安装 JVM Exporter
 * https://cloud.tencent.com/developer/article/1601717
 
+
 ### Eureka Discover
 * https://sonicshield.cn/eureka-prometheus-code.html?ivk_sa=1024609v
 
@@ -72,3 +73,14 @@ docker run -d \
 * https://cloud.tencent.com/developer/article/1622305
 > Prometheus metrics
 
+
+
+### Push GateWay
+* http://qinghua.github.io/prometheus/
+```
+docker run -d \
+--name=pg \
+-p 9092:9091 \
+prom/pushgateway
+
+```
