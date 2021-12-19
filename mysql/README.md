@@ -29,4 +29,5 @@ sed -i '1d' rename_mysql_name.sql
 
 ### 安装客户端
 yum install mysql -y
+yum install -y mysql-server 
 
