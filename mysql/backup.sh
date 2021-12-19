@@ -11,7 +11,7 @@ DATE=$(date +%Y%m%d)
 
 echo $BACKUP_FILEDIR/$DATE
 
-mkdir $BACKUP_FILEDIR/$DATE
+mkdir -p $BACKUP_FILEDIR/$DATE
 
 read -p "Enter you password:" pwd
 echo pwd=$pwd
