@@ -27,3 +27,6 @@ sed -i '1d' rename_mysql_name.sql
 ### 备份策略
 * 本机，远程机器双备份。
 
+### 安装客户端
+yum install mysql -y
+
