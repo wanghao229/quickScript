@@ -28,7 +28,7 @@ else
 begin=$(date +%s)
 
 echo ----------${db}.sql BEGIN----------
-mysqldump  -h dbhost -uwyatt -p'${pwd}' --default-character-set=utf8 -q --lock-all-tables --flush-logs -E -R --triggers -B ${db} > $BACKUP_FILEDIR/$DATE/${db}.sql
+mysqldump  -h dbhost -uwyatt -p"${pwd}" --default-character-set=utf8 -q --lock-all-tables --flush-logs -E -R --triggers -B ${db} > $BACKUP_FILEDIR/$DATE/${db}.sql
 end=$(date +%s)
 echo ${db}
 
