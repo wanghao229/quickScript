@@ -13,8 +13,8 @@ echo $BACKUP_FILEDIR/$DATE
 
 mkdir -p $BACKUP_FILEDIR/$DATE
 
-read -p "Enter you password:" pwd
-echo pwd=$pwd
+read -s -p "Enter you password:" pwd
+
 
 DATABASES=$(mysql  -h dbhost -uwyatt -p"${pwd}" -e "show databases" | grep -Ev "Database|sys|information_schema|performance_schema|mysql")
 
