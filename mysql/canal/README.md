@@ -5,6 +5,8 @@
  
 
 ### 运行
+*  https://github.com/alibaba/canal/blob/master/docker/run.sh
+
 ```
 run.sh -e canal.instance.master.address=dbhost:3306 \
          -e canal.instance.dbUsername=canal \
