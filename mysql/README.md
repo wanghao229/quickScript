@@ -32,3 +32,8 @@ sed -i '1d' rename_mysql_name.sql
 yum install mysql -y
 yum install -y mysql-server 
 
+
+### Canal
+
+
+
