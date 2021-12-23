@@ -73,3 +73,7 @@ alias doc='cd /Users/a11080178/Documents'
 source .bash_profile
 
 ```
+
+### Docker
+* docker update --restart=always 
+
