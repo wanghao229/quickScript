@@ -36,7 +36,8 @@ yum install -y mysql-server
 ### Canal
 
 
-
+### CronTab
+```
 07 10,19 * * * sh ~/Documents/mysqlBack/backup.sh > ~/Documents/mysqlBack/logs/backup.log 2>&1
 07 12 * * * sh ~/Documents/mysqlBack/backup_clean.sh > ~/Documents/mysqlBack/logs/backup_full_clean.log 2>&1
-
+```
