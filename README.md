@@ -11,6 +11,8 @@ yum install tree -y
 yum install jq -y
 yum install -y nc
 yum install -y netcat
+yum install -y epel-release
+yum install stress -y
 ```
 ### 脚本
 ```
