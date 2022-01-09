@@ -27,7 +27,7 @@ sudo yum-config-manager \
     --add-repo \
     https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/docker-ce.repo
     
-sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum install docker-ce docker-ce-cli containerd.io -y
 
 cat > /etc/docker/daemon.json << EOF
 { 
