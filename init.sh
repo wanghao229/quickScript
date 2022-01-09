@@ -43,6 +43,7 @@ echo export TMOUT=1000000 >> /root/.bash_profile; source .bash_profile
 
 
 echo "~/.bashrc"
+mkdir -p /home/wyatt
 
 cat > ~/.bashrc << EOF
 alias wy='cd /home/wyatt'
@@ -55,5 +56,7 @@ echo "dnsUpdate"
 wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dnsUpdate.sh
 
 sh dnsUpdate.sh
+
+
 
 
