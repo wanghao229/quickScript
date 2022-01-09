@@ -14,6 +14,7 @@ sh dns.sh
 
 echo "maven.sh"
 https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/maven.sh
+sh maven.sh
 
 
 echo "docker"
