@@ -44,7 +44,7 @@ echo export TMOUT=1000000 >> /root/.bash_profile; source .bash_profile
 
 echo "~/.bashrc"
 
-cat >> ~/.bashrc << EOF
+cat > ~/.bashrc << EOF
 alias wy='cd /home/wyatt'
 EOF
 
