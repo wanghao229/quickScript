@@ -13,8 +13,8 @@ Docker
 ### 使用
 ```
 useradd -M -s /sbin/nologin elasticsearch
-chmod -R elasticsearch.elasticsearch elasticsearch
-sudo -u elasticsearch elasticsearch/bin/elasticsearch -d
+chmod -R elasticsearch.elasticsearch /usr/share/elasticsearch
+sudo -u elasticsearch /usr/share/elasticsearch/bin/elasticsearch -d
 ```
 ```
 vi config/jvm.options
