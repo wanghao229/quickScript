@@ -61,7 +61,7 @@ wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dnsUpdate.s
 sh dnsUpdate.sh
 
 echo "crontab "
-echo "*/10 * * * * sh /root/dnsUpdate.sh > dnsUpdate.sh.sh.log 2>1&" >> /var/spool/cron/root
+# echo "*/10 * * * * sh /root/dnsUpdate.sh > dnsUpdate.sh.sh.log 2>1&" >> /var/spool/cron/root
 
 
 echo "/etc/profile"
