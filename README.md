@@ -12,6 +12,12 @@ yum install jq -y
 yum install -y nc
 yum install -y netcat
 ```
+### 脚本
+```
+#!/bin/bash
+source /etc/profile
+...
+```
 
 ### ssh
 ```
