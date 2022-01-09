@@ -49,7 +49,9 @@ EOF
 source ~/.bashrc
 
 
+echo "dnsUpdate"
+wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dnsUpdate.sh
 
-
+sh dnsUpdate.sh
 
 
