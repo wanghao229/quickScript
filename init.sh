@@ -9,11 +9,13 @@ yum install -y nc
 yum install -y netcat
 
 echo "dns.h"
+rm dns.sh
 wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dns.sh
 sh dns.sh
 
 echo "maven.sh"
-https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/maven.sh
+rm maven.sh
+wget https://raw.githubusercontent.com/wanghao229/quickScript/master/maven/maven.sh
 sh maven.sh
 
 
@@ -53,6 +55,7 @@ source ~/.bashrc
 
 
 echo "dnsUpdate"
+rm dnsUpdate.sh
 wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dnsUpdate.sh
 
 sh dnsUpdate.sh
