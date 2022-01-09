@@ -61,5 +61,9 @@ wget https://raw.githubusercontent.com/wanghao229/quickScript/master/dnsUpdate.s
 sh dnsUpdate.sh
 
 
+echo "/etc/profile"
+
+source /etc/profile
+
 
 
