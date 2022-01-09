@@ -39,7 +39,7 @@ EOF
 
 echo "ssh"
 
-echo export TMOUT=1000000 >> /root/.bash_profile; source .bash_profile
+echo export TMOUT=1000000 >> /root/.bash_profile; source /root/.bash_profile
 
 
 echo "~/.bashrc"
