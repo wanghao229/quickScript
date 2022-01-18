@@ -27,11 +27,15 @@ sudo systemctl enable --now kubelet
 ### 教程
 **默认空间**
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
+* http://docs.kubernetes.org.cn/537.html
 ```
 # permanently save the namespace for all subsequent kubectl commands in that context.
 kubectl config set-context --current --namespace=ggckad-s2
+
+kubectl create namespace my-namespace
 ```
 
 **Volumes**
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+
 
