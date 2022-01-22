@@ -1,5 +1,5 @@
 
-
+## k8s
 ### 安装
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
 * https://segmentfault.com/a/1190000038360804
@@ -64,9 +64,10 @@ systemctl enable kubelet && systemctl start kubelet
 ### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
 
+---
 
-### 教程
-**默认空间**
+## 使用
+#### 默认空间
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
 * http://docs.kubernetes.org.cn/537.html
 ```
@@ -76,7 +77,7 @@ kubectl config set-context --current --namespace=ggckad-s2
 kubectl create namespace my-namespace
 ```
 
-**Volumes**
+#### Volumes
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
  
 
