@@ -1,7 +1,11 @@
 
 ### 安装
 
-Dashboard
+#### minikube
+* https://minikube.sigs.k8s.io/docs/start/
+
+
+#### Dashboard
 * https://www.cnblogs.com/liyuanhong/p/13799404.html
 
 ```
