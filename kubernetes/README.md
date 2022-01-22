@@ -47,6 +47,9 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 #### weave
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
 ```
+docker pull weaveworks/weave-npc:2.8.1
+docker pull weaveworks/weave-kube:2.8.1
+
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 
 
