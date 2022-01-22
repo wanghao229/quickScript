@@ -1,5 +1,5 @@
 
-
+## k8s
 ### 安装
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
 
@@ -37,5 +37,19 @@ kubectl create namespace my-namespace
 
 **Volumes**
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+ 
+---
 
+## minikube
+#### 卸载
+* https://segmentfault.com/a/1190000039173195
+```
+minikube stop; minikube delete
+docker stop (docker ps -aq)
+rm -r ~/.kube ~/.minikube
+sudo rm /usr/local/bin/localkube /usr/local/bin/minikube
+systemctl stop '*kubelet*.mount'
+sudo rm -rf /etc/kubernetes/
+docker system prune -af --volumes
+```
 
