@@ -42,6 +42,14 @@ docker tag registry.aliyuncs.com/google_containers/etcd:3.5.1-0  k8s.gcr.io/etcd
 docker tag registry.aliyuncs.com/google_containers/coredns:v1.8.6  k8s.gcr.io/coredns/coredns:v1.8.6
 docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3.6
 ```
+
+### 安装Pod Network 插件
+#### weave
+* https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
+```
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+```
+
 ### 教程
 **默认空间**
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
