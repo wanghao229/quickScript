@@ -48,6 +48,14 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
 ```
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+
+# 重启 docker，并启动 kubelet
+systemctl daemon-reload
+systemctl restart docker
+systemctl enable kubelet && systemctl start kubelet
+
+
 ```
 
 ### 教程
