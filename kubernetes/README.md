@@ -54,18 +54,4 @@ kubectl create namespace my-namespace
 **Volumes**
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
  
----
-
-## minikube
-#### 卸载
-* https://segmentfault.com/a/1190000039173195
-```
-minikube stop; minikube delete
-docker stop (docker ps -aq)
-rm -r ~/.kube ~/.minikube
-sudo rm /usr/local/bin/localkube /usr/local/bin/minikube
-systemctl stop '*kubelet*.mount'
-sudo rm -rf /etc/kubernetes/
-docker system prune -af --volumes
-```
 
