@@ -23,7 +23,18 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 ```
+### Image
+```
+kubeadm config images pull --image-repository=registry.aliyuncs.com/google_containers
 
+docker tag registry.aliyuncs.com/google_containers/kube-apiserver:v1.23.2 k8s.gcr.io/kube-apiserver:v1.23.2
+docker tag registry.aliyuncs.com/google_containers/kube-controller-manager:v1.23.2 k8s.gcr.io/kube-controller-manager:v1.23.2
+docker tag registry.aliyuncs.com/google_containers/kube-scheduler:v1.23.2 k8s.gcr.io/kube-scheduler:v1.23.2
+docker tag registry.aliyuncs.com/google_containers/kube-proxy:v1.23.2 k8s.gcr.io/kube-proxy:v1.23.2
+docker tag registry.aliyuncs.com/google_containers/etcd:3.5.1-0  k8s.gcr.io/etcd:3.5.1-0
+docker tag registry.aliyuncs.com/google_containers/coredns:v1.8.6  k8s.gcr.io/coredns/coredns:v1.8.6
+docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3.6
+```
 ### 教程
 **默认空间**
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
