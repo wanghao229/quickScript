@@ -3,6 +3,13 @@
  
 # linux
 
+### 用户
+```
+useradd -m username
+usermod -G wheel k8s
+
+```
+
 ### command
 ```
 yum install telnet -y 
