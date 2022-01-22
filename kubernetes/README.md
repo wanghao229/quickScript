@@ -23,7 +23,10 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 ```
-### Image
+### IMAGE
+* https://blog.csdn.net/qq_31024251/article/details/115752033
+* k8s,gcr.io 无法访问
+
 ```
 kubeadm config images pull --image-repository=registry.aliyuncs.com/google_containers
 
