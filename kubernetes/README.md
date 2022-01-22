@@ -64,6 +64,13 @@ systemctl enable kubelet && systemctl start kubelet
 ### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
 
+
+### DashBoard
+* https://www.cnblogs.com/liyuanhong/p/13799404.html
+```
+kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*' &
+```
+
 ---
 
 ## 使用
