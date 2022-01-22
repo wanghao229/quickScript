@@ -2,6 +2,7 @@
 ## k8s
 ### 安装
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
+* https://segmentfault.com/a/1190000038360804
 
 ```
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
@@ -24,6 +25,7 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 sudo systemctl enable --now kubelet
 ```
 ### IMAGE
+* https://segmentfault.com/a/1190000040107263
 * https://blog.csdn.net/qq_31024251/article/details/115752033
 * k8s,gcr.io 无法访问
 
