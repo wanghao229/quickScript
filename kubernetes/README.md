@@ -28,6 +28,8 @@ sudo systemctl enable --now kubelet
 * https://segmentfault.com/a/1190000040107263
 * https://blog.csdn.net/qq_31024251/article/details/115752033
 * k8s,gcr.io 无法访问
+* kubeletNotReady runtime network not ready
+ 
 
 ```
 kubeadm config images pull --image-repository=registry.aliyuncs.com/google_containers
