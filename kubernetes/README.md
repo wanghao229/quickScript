@@ -110,7 +110,7 @@ command:
 - --kubelet-preferred-address-types=InternalIP
 ```
 
-no route to host
+* no route to host
 ```
 spec:
   hostNetwork: true
