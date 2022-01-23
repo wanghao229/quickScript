@@ -79,7 +79,17 @@ systemctl enable kubelet && systemctl start kubelet
 ---
 
 ## 使用
-#### 默认空间
+
+### busybox
+* https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+```
+kubectl run -i --tty busybox --image=busybox -- sh  # Run pod as interactive shell
+kubectl run nginx --image=nginx -n mynamespace      # Start a single instance of nginx pod in the namespace of mynamespace
+kubectl run nginx --image=nginx                     # Run pod nginx and write its spec into a file called pod.yaml
+
+```
+
+### 默认空间
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
 * http://docs.kubernetes.org.cn/537.html
 ```
@@ -89,7 +99,7 @@ kubectl config set-context --current --namespace=ggckad-s2
 kubectl create namespace my-namespace
 ```
 
-#### Volumes
+### Volumes
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
  
 
