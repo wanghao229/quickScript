@@ -111,6 +111,7 @@ command:
 ```
 
 * no route to host
+* https://stackoverflow.com/questions/60101398/kubernetes-without-pod-metrics
 ```
 spec:
   hostNetwork: true
