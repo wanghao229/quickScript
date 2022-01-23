@@ -24,7 +24,7 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 ```
-### Image
+### 镜像问题
 * https://segmentfault.com/a/1190000040107263
 * https://blog.csdn.net/qq_31024251/article/details/115752033
 * k8s,gcr.io 无法访问
@@ -44,22 +44,6 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 ```
 
 
-### dashboard
-#### 安装
-* https://github.com/kubernetes/dashboard/releases
-> kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
- 
-* https://www.cnblogs.com/liyuanhong/p/13799404.html
-> kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*' &
-
-#### RBAC
-* https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
-
-
-#### NortPort
-* https://cloud.tencent.com/developer/article/1579807
-
-
 ### 安装Pod Network 插件
 #### weave
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
@@ -75,11 +59,34 @@ systemctl daemon-reload
 systemctl restart docker
 systemctl enable kubelet && systemctl start kubelet
 
-
 ```
+
+
+### Dashboard
+#### 安装
+* https://github.com/kubernetes/dashboard/releases
+> kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
+ 
+* https://www.cnblogs.com/liyuanhong/p/13799404.html
+> kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*' &
+
+#### RBAC
+* https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
+
+
+#### NortPort
+* https://cloud.tencent.com/developer/article/1579807
+
 
 #### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
+
+### Metrics-server
+* https://github.com/kubernetes-sigs/metrics-server
+* https://cloud.tencent.com/developer/article/1818865
+* 0.6.0
+> kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
 
 
 ---
