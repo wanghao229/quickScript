@@ -87,8 +87,12 @@ systemctl enable kubelet && systemctl start kubelet
 * 0.6.0
 > kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
-
-
+```
+command:
+- /metrics-server
+- --kubelet-insecure-tls
+- --kubelet-preferred-address-types=InternalIP
+```
 ---
 
 ## 使用
