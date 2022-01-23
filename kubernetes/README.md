@@ -1,6 +1,6 @@
 
-# k8s
-### 安装
+# k8s安装
+#### 安装
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
 * https://segmentfault.com/a/1190000038360804 ,good
 * https://segmentfault.com/a/1190000040107263 ,good
@@ -32,8 +32,8 @@ sudo systemctl enable --now kubelet
 * https://blog.csdn.net/qq_31024251/article/details/115752033
 * k8s,gcr.io 无法访问
 * kubeletNotReady runtime network not ready
- 
 
+ 
 ```
 kubeadm config images pull --image-repository=registry.aliyuncs.com/google_containers
 
@@ -46,6 +46,13 @@ docker tag registry.aliyuncs.com/google_containers/coredns:v1.8.6  k8s.gcr.io/co
 docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3.6
 ```
 
+#### Master调整Taint/Toleration策略
+```
+kubectl describe node kubernetesnode01
+
+kubectl taint nodes --all node-role.kubernetes.io/master-
+
+```
 
 ## 安装Pod Network 插件
 #### weave
