@@ -1,8 +1,9 @@
 
-## k8s
+# k8s
 ### 安装
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
-* https://segmentfault.com/a/1190000038360804
+* https://segmentfault.com/a/1190000038360804 ,good
+* https://segmentfault.com/a/1190000040107263 ,good
 
 ```
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
@@ -24,8 +25,10 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 ```
-### 镜像问题
-* https://segmentfault.com/a/1190000040107263
+
+
+#### 镜像问题
+
 * https://blog.csdn.net/qq_31024251/article/details/115752033
 * k8s,gcr.io 无法访问
 * kubeletNotReady runtime network not ready
@@ -44,7 +47,7 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 ```
 
 
-### 安装Pod Network 插件
+## 安装Pod Network 插件
 #### weave
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
 ```
@@ -62,7 +65,7 @@ systemctl enable kubelet && systemctl start kubelet
 ```
 
 
-### Dashboard
+## Dashboard
 #### 安装
 * https://github.com/kubernetes/dashboard/releases
 > kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
@@ -81,7 +84,7 @@ systemctl enable kubelet && systemctl start kubelet
 #### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
 
-### Metrics-server
+## Metrics-server
 * https://github.com/kubernetes-sigs/metrics-server
 * https://cloud.tencent.com/developer/article/1818865
 * 0.6.0
@@ -97,7 +100,7 @@ command:
 
 ## 使用
 
-### busybox
+#### busybox
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ```
 kubectl run -i --tty busybox --image=busybox -- sh  # Run pod as interactive shell
@@ -106,7 +109,7 @@ kubectl run nginx --image=nginx                     # Run pod nginx and write it
 
 ```
 
-### 默认空间
+#### 默认空间
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
 * http://docs.kubernetes.org.cn/537.html
 ```
@@ -116,7 +119,7 @@ kubectl config set-context --current --namespace=ggckad-s2
 kubectl create namespace my-namespace
 ```
 
-### Volumes
+#### Volumes
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
  
 
