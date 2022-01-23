@@ -54,6 +54,8 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 
 ```
 
+ 
+
 ## 安装Pod Network 插件
 #### weave
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
@@ -91,6 +93,7 @@ systemctl enable kubelet && systemctl start kubelet
 #### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
 
+
 ## Metrics-server
 * https://github.com/kubernetes-sigs/metrics-server
 * https://cloud.tencent.com/developer/article/1818865
@@ -103,6 +106,14 @@ command:
 - --kubelet-insecure-tls
 - --kubelet-preferred-address-types=InternalIP
 ```
+
+#### 启用Aggregator Routing
+```
+cat /etc/kubernetes/manifests/kube-apiserver.yaml
+
+--enable-aggregator-routing=true 
+```
+
 ---
 
 ## 使用
