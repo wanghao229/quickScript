@@ -108,6 +108,7 @@ command:
 ```
 
 #### 启用Aggregator Routing
+* https://www.cnblogs.com/lfl17718347843/p/14283796.html
 ```
 cat /etc/kubernetes/manifests/kube-apiserver.yaml
 
