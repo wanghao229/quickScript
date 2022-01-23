@@ -56,6 +56,8 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 * https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
 
 
+#### NortPort
+* https://cloud.tencent.com/developer/article/1579807
 
 
 ### 安装Pod Network 插件
