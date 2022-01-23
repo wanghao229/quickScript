@@ -45,11 +45,15 @@ docker tag registry.aliyuncs.com/google_containers/pause:3.6  k8s.gcr.io/pause:3
 
 
 ### dashboard
+#### 安装
 * https://github.com/kubernetes/dashboard/releases
 > kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
  
 * https://www.cnblogs.com/liyuanhong/p/13799404.html
 > kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*' &
+
+#### RBAC
+* https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
 
 
 
