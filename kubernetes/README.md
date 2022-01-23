@@ -88,7 +88,9 @@ systemctl enable kubelet && systemctl start kubelet
 
 #### NortPort
 * https://cloud.tencent.com/developer/article/1579807
-
+```
+kubectl edit services kubernetes-dashboard -n kubernetes-dashboard
+```
 
 #### Addons
 * https://kubernetes.io/zh/docs/concepts/cluster-administration/addons/
@@ -106,6 +108,21 @@ command:
 - /metrics-server
 - --kubelet-insecure-tls
 - --kubelet-preferred-address-types=InternalIP
+```
+
+no route to host
+```
+spec:
+  hostNetwork: true
+  containers:
+  - args:
+    - --kubelet-insecure-tls
+    - --cert-dir=/tmp
+    - --secure-port=4443
+    - --kubelet-preferred-address-types=InternalIP
+    - --v=6
+    image: k8s.gcr.io/metrics-server-amd64:v0.3.6
+    imagePullPolicy: Always
 ```
 
 #### 启用Aggregator Routing
