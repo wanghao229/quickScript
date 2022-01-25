@@ -1,10 +1,10 @@
 
 
-### 安装
+#### 安装
 * https://github.com/alibaba/canal/wiki/Docker-QuickStart
  
 
-### 运行
+#### 运行
 *  https://github.com/alibaba/canal/blob/master/docker/run.sh
 
 ```
@@ -16,3 +16,8 @@ run.sh -e canal.instance.master.address=dbhost:3306 \
          -e canal.instance.gtidon=false \
          -e canal.instance.filter.regex=.*\\..* 
 ```
+
+#### Canal Kafka RocketMq QuickStart 
+* https://github.com/alibaba/canal/wiki/Canal-Kafka-RocketMQ-QuickStart
+
+
