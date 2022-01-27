@@ -14,6 +14,7 @@ yum install -y nc
 yum install -y netcat
 yum install -y epel-release
 yum install stress -y
+find / -type -f -size +100m
 ```
 ### 脚本
 ```
