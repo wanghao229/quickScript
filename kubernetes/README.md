@@ -54,7 +54,17 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 
 ```
 
- 
+#### 更换外网IP地址
+* https://www.caiyifan.cn/p/d6990d10.html 
+* https://blog.csdn.net/xuxile/article/details/77562779 虚拟IP配置
+```
+DEVICE=eth0:1
+ONBOOT=yes
+BOOTPROTO=static
+IPADDR=XXX.XXX.XXX.XXX
+NETMASK=255.0.0.0
+GATEWAY=0.0.0.0
+```
 
 ## 安装Pod Network 插件
 #### weave
@@ -134,16 +144,6 @@ cat /etc/kubernetes/manifests/kube-apiserver.yaml
 --enable-aggregator-routing=true 
 ```
 
-#### 更换外网IP地址
-* https://blog.csdn.net/xuxile/article/details/77562779
-```
-DEVICE=eth0:1
-ONBOOT=yes
-BOOTPROTO=static
-IPADDR=XXX.XXX.XXX.XXX
-NETMASK=255.0.0.0
-GATEWAY=0.0.0.0
-```
 
 
 ## 使用
