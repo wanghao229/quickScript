@@ -24,6 +24,13 @@ sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
+
+sudo kubeadm init \
+    --apiserver-advertise-address=外网IP \
+    --control-plane-endpoint=外网IP  \
+    --image-repository registry.cn-hangzhou.aliyuncs.com/google_containers
+
+
 ```
 
 
