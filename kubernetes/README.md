@@ -84,12 +84,17 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 * https://www.caiyifan.cn/p/d6990d10.html 
 * https://blog.csdn.net/xuxile/article/details/77562779 虚拟IP配置
 ```
+
+vi /etc/sysconfig/network-scripts/ifcfg-eth0:1
+
 DEVICE=eth0:1
 ONBOOT=yes
 BOOTPROTO=static
 IPADDR=XXX.XXX.XXX.XXX
 NETMASK=255.0.0.0
 GATEWAY=0.0.0.0
+
+service network restart
 ```
 
 ## 安装Pod Network 插件
