@@ -85,6 +85,10 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 * https://blog.csdn.net/xuxile/article/details/77562779 虚拟IP配置
 ```
 
+vi /usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf
+--node-ip=公网IP
+
+
 vi /etc/sysconfig/network-scripts/ifcfg-eth0:1
 
 DEVICE=eth0:1
