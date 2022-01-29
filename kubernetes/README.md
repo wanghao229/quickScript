@@ -32,7 +32,11 @@ sudo kubeadm init \
 
 
 ```
+#### Worker 节点
+```
+scp root@XXX:$HOME/.kube/config $HOME/.kube/
 
+```
 
 #### 镜像问题
 
