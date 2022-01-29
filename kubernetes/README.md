@@ -151,7 +151,8 @@ cat /etc/kubernetes/manifests/kube-apiserver.yaml
 --enable-aggregator-routing=true 
 ```
 
-
+## k8s迁移
+* 以后再说
 
 ## 使用
 
