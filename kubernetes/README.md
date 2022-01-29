@@ -31,7 +31,17 @@ sudo kubeadm init \
     --image-repository registry.cn-hangzhou.aliyuncs.com/google_containers
 
 
+
+
 ```
+
+#### kubectl
+```
+rm -rf /root/.kube/
+mkdir /root/.kube/
+cp -i /etc/kubernetes/admin.conf /home/k8s/.kube/config
+```
+
 #### Worker 节点
 ```
 scp root@XXX:$HOME/.kube/config $HOME/.kube/
