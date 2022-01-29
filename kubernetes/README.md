@@ -32,14 +32,19 @@ sudo kubeadm init \
 
 
 
-
 ```
 
 #### kubectl
 ```
 rm -rf /root/.kube/
 mkdir /root/.kube/
-cp -i /etc/kubernetes/admin.conf /home/k8s/.kube/config
+
+mkdir -p $HOME/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
 ```
 
 #### Worker 节点
