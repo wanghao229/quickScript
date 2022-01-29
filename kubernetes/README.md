@@ -137,16 +137,16 @@ service network restart
 #### weave
 * https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
 ```
-docker pull weaveworks/weave-npc:2.8.1
-docker pull weaveworks/weave-kube:2.8.1
+sudo  docker pull weaveworks/weave-npc:2.8.1
+sudo  docker pull weaveworks/weave-kube:2.8.1
 
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 
 
 # 重启 docker，并启动 kubelet
-systemctl daemon-reload
-systemctl restart docker
-systemctl enable kubelet && systemctl start kubelet
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+sudo  systemctl enable kubelet &&  sudo  systemctl start kubelet
 
 ```
 
