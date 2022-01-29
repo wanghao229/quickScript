@@ -25,12 +25,37 @@ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 
+```
+
+```
+#修改 /etc/sysctl.conf
+# 如果有配置，则修改
+sed -i "s#^net.ipv4.ip_forward.*#net.ipv4.ip_forward=1#g"  /etc/sysctl.conf
+sed -i "s#^net.bridge.bridge-nf-call-ip6tables.*#net.bridge.bridge-nf-call-ip6tables=1#g"  /etc/sysctl.conf
+sed -i "s#^net.bridge.bridge-nf-call-iptables.*#net.bridge.bridge-nf-call-iptables=1#g"  /etc/sysctl.conf
+sed -i "s#^net.ipv6.conf.all.disable_ipv6.*#net.ipv6.conf.all.disable_ipv6=1#g"  /etc/sysctl.conf
+sed -i "s#^net.ipv6.conf.default.disable_ipv6.*#net.ipv6.conf.default.disable_ipv6=1#g"  /etc/sysctl.conf
+sed -i "s#^net.ipv6.conf.lo.disable_ipv6.*#net.ipv6.conf.lo.disable_ipv6=1#g"  /etc/sysctl.conf
+sed -i "s#^net.ipv6.conf.all.forwarding.*#net.ipv6.conf.all.forwarding=1#g"  /etc/sysctl.conf
+# 可能没有，追加
+echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+echo "net.bridge.bridge-nf-call-ip6tables = 1" >> /etc/sysctl.conf
+echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.all.forwarding = 1"  >> /etc/sysctl.conf
+# 执行命令以应用
+sysctl -p
+
+```
+
+```
+
 sudo kubeadm init \
     --apiserver-advertise-address=外网IP \
     --control-plane-endpoint=外网IP  \
     --image-repository registry.cn-hangzhou.aliyuncs.com/google_containers
-
-
 
 ```
 
