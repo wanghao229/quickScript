@@ -83,6 +83,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 scp root@XXX:$HOME/.kube/config $HOME/.kube/
 
+sudo kubeadm join XXX --node-name XXX
+
 ```
 
 #### 镜像问题
