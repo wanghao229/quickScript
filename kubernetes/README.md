@@ -270,4 +270,11 @@ kubectl create namespace my-namespace
 #### Volumes
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
  
+ 
+#### k8s配置
+```
+
+hostnamectl set-hostname kube-master0
+
+```
 
