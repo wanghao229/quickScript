@@ -165,8 +165,40 @@ sudo  systemctl enable kubelet &&  sudo  systemctl start kubelet
 
 #### NortPort
 * https://cloud.tencent.com/developer/article/1579807
+
+```
+Creating a Service Account
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+```
+
+```
+Creating a ClusterRoleBinding
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kubernetes-dashboard
+
+```
+
 ```
 kubectl edit services kubernetes-dashboard -n kubernetes-dashboard
+
+kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"
+
 ```
 
 #### Addons
