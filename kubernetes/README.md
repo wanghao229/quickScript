@@ -219,7 +219,7 @@ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get
 * https://github.com/kubernetes-sigs/metrics-server
 * https://cloud.tencent.com/developer/article/1818865
 * 0.6.0
-> kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+> kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.0/components.yaml
 
 ```
 command:
