@@ -60,6 +60,8 @@ sysctl -p
 
 ```
 
+kubeadm token create --print-join-command
+
 sudo kubeadm init \
     --apiserver-advertise-address=外网IP \
     --control-plane-endpoint=外网IP  \
