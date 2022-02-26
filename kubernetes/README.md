@@ -221,6 +221,7 @@ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get
 * 
 * 0.6.0
 > kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.0/components.yaml
+> kubectl get apiservice v1beta1.metrics.k8s.io -o yaml
 
 ```
 command:
