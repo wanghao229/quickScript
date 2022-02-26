@@ -25,7 +25,15 @@ source /etc/profile
 
 ### ssh
 ```
-echo export TMOUT=1000000 >> /root/.bash_profile; source .bash_profile
+echo export TMOUT=1000000 >> /root/.bash_profile
+cat /root/.bash_profile
+source .bash_profile
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config_bak
+echo ClientAliveInterval=60 >> /etc/ssh/sshd_config
+service sshd restart
+cat /etc/ssh/sshd_config
+service sshd restart
+exit
 ```
 
 ```
