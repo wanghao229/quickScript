@@ -247,6 +247,7 @@ spec:
     imagePullPolicy: Always
 ```
 * https://stackoverflow.com/questions/62138734/metric-server-not-working-unable-to-handle-the-request-get-nodes-metrics-k8s
+* https://www.linuxsysadmins.com/service-unavailable-kubernetes-metrics/ 全面
 
 ```
 kubectl edit deployments.apps -n kube-system metrics-server
