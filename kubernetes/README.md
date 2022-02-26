@@ -22,6 +22,7 @@ sudo setenforce 0
 sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+sudo yum install -y kubelet-1.23.4-0.x86_64 kubeadm-1.23.4-0.x86_64 kubectl-1.23.4-0.x86_64 --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
 
