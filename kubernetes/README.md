@@ -218,6 +218,7 @@ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get
 ## Metrics-server
 * https://github.com/kubernetes-sigs/metrics-server
 * https://cloud.tencent.com/developer/article/1818865
+* 
 * 0.6.0
 > kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.0/components.yaml
 
@@ -242,6 +243,14 @@ spec:
     - --v=6
     image: k8s.gcr.io/metrics-server-amd64:v0.3.6
     imagePullPolicy: Always
+```
+* https://stackoverflow.com/questions/62138734/metric-server-not-working-unable-to-handle-the-request-get-nodes-metrics-k8s
+
+```
+kubectl edit deployments.apps -n kube-system metrics-server
+dnsPolicy: ClusterFirst
+hostNetwork: True
+
 ```
 
 #### 启用Aggregator Routing
