@@ -1,6 +1,6 @@
 
 
-
+### 教程
 #### 高可用
 * http://pigpi.cn/58749.html
 
@@ -16,3 +16,8 @@
 
 #### NGINX Ingress Controller
 * https://kubernetes.github.io/ingress-nginx/deploy/
+
+
+#### 退出k8s
+* https://blog.csdn.net/qq_25268789/article/details/103843505
+
