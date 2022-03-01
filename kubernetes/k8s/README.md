@@ -3,6 +3,7 @@
 ### 教程
 #### 高可用
 * http://pigpi.cn/58749.html
+* Port, https://documentation.sisense.com/docs/linux-port-settings#gsc.tab=0
 
 #### 部署
 * https://segmentfault.com/a/1190000040132460
