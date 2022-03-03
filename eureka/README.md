@@ -13,5 +13,10 @@
 * http://docs.kubernetes.org.cn/468.html
 * https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run
 ```
-run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...]
+kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...]
+
+kubectl create deployment NAME --image=image [--dry-run]
+ 
+kubectl create deploy spring-service-server  --image=registry.cn-hangzhou.aliyuncs.com/wanghao4999/spring-service-server:v1 --replicas=1
+ 
 ```
