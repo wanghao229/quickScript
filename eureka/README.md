@@ -8,3 +8,9 @@
 * https://kubernetes.io/docs/concepts/services-networking/ingress/
 * 
 
+
+#### 快速部署
+* http://docs.kubernetes.org.cn/468.html
+```
+run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...]
+```
