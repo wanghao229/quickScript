@@ -18,5 +18,9 @@ kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=rep
 kubectl create deployment NAME --image=image [--dry-run]
  
 kubectl create deploy spring-service-server  --image=registry.cn-hangzhou.aliyuncs.com/wanghao4999/spring-service-server:v1 --replicas=1
+
+docker build -t registry.cn-hangzhou.aliyuncs.com/wanghao4999/spring-client-server:v1.0 .
+
+
  
 ```
