@@ -22,3 +22,8 @@
 #### 退出k8s
 * https://blog.csdn.net/qq_25268789/article/details/103843505
 
+
+#### containerPort
+* https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#containerport-v1-core
+
+
