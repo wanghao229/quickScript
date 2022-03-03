@@ -21,6 +21,6 @@ kubectl create deploy spring-service-server  --image=registry.cn-hangzhou.aliyun
 
 docker build -t registry.cn-hangzhou.aliyuncs.com/wanghao4999/spring-client-server:v1.0 .
 
-
+ kubectl expose deployment my-nginx --port=80 --target-port=80
  
 ```
