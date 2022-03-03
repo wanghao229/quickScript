@@ -11,6 +11,7 @@
 
 #### 快速部署
 * http://docs.kubernetes.org.cn/468.html
+* https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run
 ```
 run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...]
 ```
