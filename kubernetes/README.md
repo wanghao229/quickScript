@@ -16,24 +16,8 @@ repo_gpgcheck=0
 gpgkey=http://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
         http://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
 EOF
-
-# 将 SELinux 设置为 permissive 模式（相当于将其禁用）
-sudo setenforce 0
-sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
-
-sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
-sudo yum install -y kubelet-1.23.4-0.x86_64 kubeadm-1.23.4-0.x86_64 kubectl-1.23.4-0.x86_64 --disableexcludes=kubernetes
-
-sudo systemctl enable --now kubelet
-
-
-sed -i "s#^ExecStart=/usr/bin/dockerd.*#ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --exec-opt native.cgroupdriver=systemd#g" /usr/lib/systemd/system/docker.service
-
-systemctl daemon-reload
-systemctl restart docker
-systemctl enable kubelet && systemctl start kubelet
-
 ```
+
 
 ```
 #修改 /etc/sysctl.conf
@@ -57,6 +41,27 @@ echo "net.ipv6.conf.all.forwarding = 1"  >> /etc/sysctl.conf
 sysctl -p
 
 ```
+
+
+```
+# 将 SELinux 设置为 permissive 模式（相当于将其禁用）
+sudo setenforce 0
+sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+
+sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+sudo yum install -y kubelet-1.23.4-0.x86_64 kubeadm-1.23.4-0.x86_64 kubectl-1.23.4-0.x86_64 --disableexcludes=kubernetes
+
+sudo systemctl enable --now kubelet
+
+
+sed -i "s#^ExecStart=/usr/bin/dockerd.*#ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --exec-opt native.cgroupdriver=systemd#g" /usr/lib/systemd/system/docker.service
+
+systemctl daemon-reload
+systemctl restart docker
+systemctl enable kubelet && systemctl start kubelet
+
+```
+
 
 ```
 
