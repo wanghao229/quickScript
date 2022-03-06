@@ -27,3 +27,8 @@ kubectl expose deployment my-nginx --port=80 --target-port=80 --type=NodePort --
 kubectl create service clusterip ngx-dep --tcp=80:80
  
 ```
+
+#### 创建Service
+```
+https://www.cnblogs.com/brady-wang/p/13796302.html
+```
