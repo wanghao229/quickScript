@@ -48,5 +48,17 @@ yum install -y mysql-server
 CREATE USER 'mycompany'@'%' IDENTIFIED BY 'mycompany';
 ALTER USER 'mycompany'@'%' IDENTIFIED WITH mysql_native_password BY 'mycompany';
  flush privileges;
+ 
+GRANT ALL ON *.* TO 'root'@'%'
+update user set host = '%' where user = 'root';
+update user set host = '%' where user = 'root' and host='localhost';
+GRANT ALL ON *.* TO 'root'@'%' 
+flush privileges;    
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
+
+新建用户
+CREATE USER 'mycompany'@'%' IDENTIFIED BY 'mycompany';
+ALTER USER 'mycompany'@'%' IDENTIFIED WITH mysql_native_password BY 'mycompany';
+ flush privileges;
 
 ```
