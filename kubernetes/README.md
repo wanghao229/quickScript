@@ -168,6 +168,10 @@ lsmod | grep br_netfilter 来完成。
 若要显式加载该模块，可执行 sudo modprobe br_netfilter。
 ```
 
+#### 无法ping通clusterIP（或ServieName)
+* https://blog.csdn.net/Urms_handsomeyu/article/details/106294085
+* https://blog.51cto.com/u_15080021/4000120
+> kube-proxy 默认iptables, 修改为 ipvs
 
 ## 安装Pod Network 插件
 #### weave
