@@ -163,6 +163,9 @@ net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
 sudo sysctl --system
+
+lsmod | grep br_netfilter 来完成。
+若要显式加载该模块，可执行 sudo modprobe br_netfilter。
 ```
 
 
