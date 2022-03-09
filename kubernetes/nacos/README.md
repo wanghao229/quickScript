@@ -2,4 +2,6 @@
 
 #### 安装
 * http://www.mydlq.club/article/104/ GOOD
+* https://blog.51cto.com/keep11/3925340 50%
+
 
