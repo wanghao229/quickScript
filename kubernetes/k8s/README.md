@@ -12,8 +12,6 @@
 
 
 
-#### Kubernetes load balancer External IP pending
-*
 
 #### NGINX Ingress Controller
 * https://kubernetes.github.io/ingress-nginx/deploy/
@@ -30,10 +28,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 
 
-### DNS排查
-* http://www.mydlq.club/article/78/
-
-
 ### LoadBalancer
 * https://zhuanlan.zhihu.com/p/266422557
 
@@ -41,8 +35,18 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 * https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource
 
 
+---
+### 问题排查
+#### DNS排查
+* http://www.mydlq.club/article/78/
 
+#### How to fix CrashLoopBackOff kubernetes error
+* https://komodor.com/learn/how-to-fix-crashloopbackoff-kubernetes-error/#:~:text=If%20you%20get%20the%20back,window%20of%20time%20to%20respond.
 
+#### Kubernetes load balancer External IP pending
+*
+
+---
 ### 域名
 ```
     访问Pod:(注意下面不是直接pod的ip,而是由pod的ip组成的字符串)
