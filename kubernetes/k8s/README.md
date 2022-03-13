@@ -29,7 +29,21 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 * https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#containerport-v1-core
 
 
-#### 域名
+
+### DNS排查
+* http://www.mydlq.club/article/78/
+
+
+### LoadBalancer
+* https://zhuanlan.zhihu.com/p/266422557
+
+### Ingress
+* https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource
+
+
+
+
+### 域名
 ```
     访问Pod:(注意下面不是直接pod的ip,而是由pod的ip组成的字符串)
     {pod-ip}.{namespace}.pod.cluster.local
@@ -47,13 +61,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 
 ```
-
-### DNS排查
-* http://www.mydlq.club/article/78/
-
-
-### LoadBalancer
-* https://zhuanlan.zhihu.com/p/266422557
-
-
 
