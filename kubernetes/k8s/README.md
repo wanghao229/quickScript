@@ -52,4 +52,8 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 * http://www.mydlq.club/article/78/
 
 
+### LoadBalancer
+* https://zhuanlan.zhihu.com/p/266422557
+
+
 
