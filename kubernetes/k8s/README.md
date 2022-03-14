@@ -29,7 +29,15 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 
 ### LoadBalancer
-* https://zhuanlan.zhihu.com/p/266422557
+* https://zhuanlan.zhihu.com/p/266422557 GOOD
+* https://metallb.universe.tf/installation/
+* MetalLB 
+```
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+# On first install only
+kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
+```
 
 ### Ingress
 * https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource
