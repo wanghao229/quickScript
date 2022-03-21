@@ -4,6 +4,7 @@
 * https://kubernetes.io/zh/docs/setup/production-environment/tools/_print/#pg-29e59491dd6118b23072dfe9ebb93323
 * https://segmentfault.com/a/1190000038360804 ,good
 * https://segmentfault.com/a/1190000040107263 ,good
+* https://www.kubernetes.org.cn/6632.html, mid
 
 ```
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
