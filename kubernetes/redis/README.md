@@ -19,6 +19,11 @@ redis-cli --cluster fix 0.0.0.0:6379 --cluster-search-multiple-owners
 * redis集群，添加删除槽, https://www.cnblogs.com/xmxkkk/p/8038190.html 60^
 ```
 for i in {12915..16383};do redis-cli -h 10.32.0.6 cluster  delslots $i;done
+
+for i in {0..5460}; do echo $i;redis-cli -h 10.46.0.11 cluster addslots $i;done
+for i in {5461..10921}; do echo $i;redis-cli -h 10.39.0.7 cluster addslots $i;done
+for i in {10922..16383}; do echo $i;redis-cli -h 10.32.0.6 cluster addslots $i;done
+
 ```
 
 #### 分析redis key大小的几种方法
