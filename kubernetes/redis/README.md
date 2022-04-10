@@ -44,4 +44,12 @@ bgsave
 * redis-cluster-proxy
 
 
+### 性能监控
+* https://www.cnblogs.com/felixzh/p/11170143.html
+ 
+#### redis_exporter
+
+* redis_exporter
+
+
 
