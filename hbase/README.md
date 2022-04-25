@@ -20,7 +20,7 @@
 ```
 docker pull harisekhon/hbase
 
-docker run -d -h docker-hbase \
+docker run -d -h myhbase \
         -p 2181:2181 \
         -p 8080:8080 \
         -p 8085:8085 \
