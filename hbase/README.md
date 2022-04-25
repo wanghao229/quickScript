@@ -7,6 +7,7 @@
 
 ### 安装
 * https://www.jianshu.com/p/c971d5c21633
+* https://blog.csdn.net/qq_42996037/article/details/91343636
 
 
 
