@@ -21,6 +21,11 @@
 
 
 ---
+### 实用
+#### RowKey的散列和预分区设计
+* https://www.cnblogs.com/bdifn/p/3801737.html 
+
+---
 ### 问题
 #### Call to address=myhbase/127.0.0.1:16020 failed
 * https://blog.csdn.net/qqHJQS/article/details/96628601
