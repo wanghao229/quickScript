@@ -1,5 +1,6 @@
 
-#### 步骤
+---
+### 步骤
 1. 安装
 2. 压测
 3. 自己使用
@@ -13,7 +14,13 @@
 #### SpringBoot
 * https://www.jianshu.com/p/e5bcf8ba5128
 
+---
+### 命令
+#### SCAN
+* https://generalthink.github.io/2018/12/17/hbase-scan-command/
 
+
+---
 ### 问题
 #### Call to address=myhbase/127.0.0.1:16020 failed
 * https://blog.csdn.net/qqHJQS/article/details/96628601
