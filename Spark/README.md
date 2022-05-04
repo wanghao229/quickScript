@@ -10,3 +10,10 @@
 * 123
 
 
+### 问题
+
+#### tty. No such file or directory
+* mac docker ~/Library/Containers/com.docker.docker/Data/vms/0/tty: No such file or directory解决办法
+* https://blog.csdn.net/m0_38112165/article/details/120116336
+* 
+
