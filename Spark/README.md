@@ -4,6 +4,8 @@
 * 实验集，http://www.sogou.com/labs/resource/list_yuliao.php
 
 
+#### 字符频数统计
+* https://tellyouwhat.cn/p/docker-build-spark-wordcount-app/
 
 ### 安装
 #### 安装教程
