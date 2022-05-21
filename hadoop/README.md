@@ -58,3 +58,12 @@ export HDFS_SECONDARYNAMENODE_USER="root"
 export YARN_RESOURCEMANAGER_USER="root"
 export YARN_NODEMANAGER_USER="root"
 ```
+
+#### Hadoop : Permission denied (publickey,password, keyboard-interactive)
+* https://askubuntu.com/questions/724523/permission-denied-on-start-dfs-sh
+```
+$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+$ chmod 0600 ~/.ssh/authorized_keys
+```
+
