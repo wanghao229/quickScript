@@ -13,7 +13,35 @@ wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
-
 ```
 
+```
+<configuration>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:/usr/local/hadoop-3.3.3/tmp</value>
+        <description>Abase for other temporary directories.</description>
+    </property>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://0.0.0.0:9000</value>
+    </property>
+</configuration>
+
+
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:/usr/local/hadoop-3.3.3/tmp/dfs/name</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:/usr/local/hadoop-3.3.3/tmp/dfs/data</value>
+    </property>
+</configuration>
+```
 
