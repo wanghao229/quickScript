@@ -5,14 +5,20 @@
 
 
 #### 安装
+* https://cloud.tencent.com/developer/article/1711159 80%
+* 
 ```
-
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz
 
 #HADOOP_HOME
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
+```
+
+```
+yum install -y java-1.8.0-openjdk-devel.x86_64
+hdfs namenode -format
 ```
 
 ```
@@ -45,8 +51,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 </configuration>
 ```
 
-* yum install -y java-1.8.0-openjdk-devel.x86_64
-* hdfs namenode -format
+
 
 
 ### 问题
