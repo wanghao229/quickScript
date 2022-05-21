@@ -1,5 +1,5 @@
 
-#### 备注
+### 备注
 * 可以一次安装，然后打包成Docker使用
 * 不需要存储数据，GOOD
 
@@ -45,3 +45,16 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 </configuration>
 ```
 
+* yum install -y java-1.8.0-openjdk-devel.x86_64
+* hdfs namenode -format
+
+
+### 问题
+#### ERROR: Attempting to operate on hdfs namenode as root
+```
+export HDFS_NAMENODE_USER="root"
+export HDFS_DATANODE_USER="root"
+export HDFS_SECONDARYNAMENODE_USER="root"
+export YARN_RESOURCEMANAGER_USER="root"
+export YARN_NODEMANAGER_USER="root"
+```
