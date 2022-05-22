@@ -1,20 +1,27 @@
 
+### 安装
+#### 安装教程
+*
 
-### 使用教程
+```
+#SPARK
+export SPARK_HOME=/usr/local/spark-3.2.1-bin-hadoop3.2
+export PATH=$PATH:$SPARK_HOME/bin
+```
+
+#### 动态修改Docker端口
+* https://www.jianshu.com/p/6aefed2be1c7
+* 
+
+
+
+#### 使用教程
 * https://www.cnblogs.com/shishanyuan/p/4721102.html
 * 实验集，http://www.sogou.com/labs/resource/list_yuliao.php
 
 
 #### 字符频数统计
 * https://tellyouwhat.cn/p/docker-build-spark-wordcount-app/
-
-### 安装
-#### 安装教程
-* 123
-
-#### 动态修改Docker端口
-* https://www.jianshu.com/p/6aefed2be1c7
-* 
 
 ### 问题
 
