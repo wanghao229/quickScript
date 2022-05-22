@@ -1,12 +1,15 @@
 
 ### 安装
 #### 安装教程
-*
+
 
 ```
 #SPARK
 export SPARK_HOME=/usr/local/spark-3.2.1-bin-hadoop3.2
 export PATH=$PATH:$SPARK_HOME/bin
+
+spark-shell --master spark://192.168.1.3:7077 --executor-memory 1024m --driver-memory 1024m
+
 ```
 
 #### 动态修改Docker端口
