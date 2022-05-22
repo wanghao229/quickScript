@@ -6,7 +6,10 @@
 
 #### 安装
 * https://cloud.tencent.com/developer/article/1711159 80%
-* 
+* https://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html 30%
+
+
+
 ```
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz
 
