@@ -25,6 +25,11 @@ hdfs namenode -format
 ```
 
 ```
+start-dfs.sh
+```
+
+#### 文件配置
+```
 <configuration>
     <property>
         <name>hadoop.tmp.dir</name>
