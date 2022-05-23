@@ -15,9 +15,13 @@ spark-shell --master spark://192.168.1.3:7077 --executor-memory 1024m --driver-m
 ```
 
 ```
+
+start-dfs.sh
+
 cd /usr/local/spark-3.2.1-bin-hadoop3.2
 
 ./start-all.sh
+
 ```
 #### 动态修改Docker端口
 * https://www.jianshu.com/p/6aefed2be1c7
