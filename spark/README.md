@@ -23,6 +23,12 @@ cd /usr/local/spark-3.2.1-bin-hadoop3.2
 ./start-all.sh
 
 ```
+
+#### JAR
+```
+spark-submit --master spark://192.168.1.3:7077 --class class3.SogouResult --executor-memory 1g spark-demo-one.jar hdfs://localhost:9000/sogou/SogouQ1.txt hdfs://localhost:9000/class3/output3
+```
+
 #### 动态修改Docker端口
 * https://www.jianshu.com/p/6aefed2be1c7
 * 
