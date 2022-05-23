@@ -25,7 +25,8 @@ hdfs namenode -format
 ```
 
 ```
-start-dfs.sh
+cd /usr/local/hadoop-3.3.3/sbin
+./start-dfs.sh
 ```
 
 #### 文件配置
