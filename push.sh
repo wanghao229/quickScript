@@ -10,18 +10,14 @@ echo "please enter the commit info...."
 
 read message
 
-now=$(date "+%Y%m%d-%H%M%S")
-
-echo $now
-
-git commit -m "$now $message"
+git commit -m "Update README.md  $message"
 
 echo;
 
 echo $message 
 
 echo "Commit the changes to the remote git server"
-# git push
+git push
 echo;
  
 echo "Batch execution complete!"
