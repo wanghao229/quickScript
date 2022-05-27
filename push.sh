@@ -1,3 +1,7 @@
+
+RUN_PATH=$(cd $(dirname $0); pwd)
+cd $RUN_PATH
+
 echo "Start submitting code to the local repository"
 echo "The current directory is：$(pwd)"
 git add *
