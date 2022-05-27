@@ -8,7 +8,13 @@ echo;
 echo "Commit the changes to the local repository"
 echo "please enter the commit info...."
 
-read message
+message=$0
+
+if test -z message
+then 
+  read message
+fi
+
 
 git commit -m "Update README.md  $message"
 
