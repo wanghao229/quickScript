@@ -5,10 +5,21 @@
 * https://www.cnblogs.com/upupfeng/p/13452385.html, docker 搭建
 * https://github.com/big-data-europe/docker-hive
 
-
 #### 二进制文件安装
 
+* https://blog.csdn.net/zheng911209/article/details/105413578
+
+```shell
+
+cd /usr/local/apache-hive-3.1.3/conf
+ 
+cp hive-env.sh.template  hive-env.sh
+ 
+cp hive-default.xml.template hive-site.xml
+
 ```
+
+```shell
 sudo vi /etc/profile
 
 #Hive
@@ -19,7 +30,7 @@ export CLASSPATH=$CLASSPATH:$HIVE_HOME/bin
 
 ##### Mysql
 * https://www.lilinchao.com/archives/1693.html 
-```
+```shell
 bin/schematool -dbType derby -initSchema
 ```
 
@@ -33,5 +44,8 @@ bin/schematool -dbType derby -initSchema
 #### java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient
 * https://stackoverflow.com/questions/35449274/java-lang-runtimeexception-unable-to-instantiate-org-apache-hadoop-hive-ql-meta
 * hive --service metastore & 
+
+
+
 
 

@@ -30,7 +30,8 @@ cd /usr/local/hadoop-3.3.3/sbin
 ```
 
 #### 文件配置
-```
+```shell
+vi  core-site.xml
 <configuration>
     <property>
         <name>hadoop.tmp.dir</name>
@@ -44,6 +45,7 @@ cd /usr/local/hadoop-3.3.3/sbin
 </configuration>
 
 
+vi hdfs-site.xml
 <configuration>
     <property>
         <name>dfs.replication</name>
@@ -80,4 +82,23 @@ $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 $ chmod 0600 ~/.ssh/authorized_keys
 ```
+
+
+
+#### 执行start-dfs.sh后，datenode没有启动的解决办法
+
+* https://blog.csdn.net/zimojiang/article/details/80725084#:~:text=%E6%89%A7%E8%A1%8Cstart%2Ddfs.sh%E5%90%8E%EF%BC%8Cdatenode%E6%B2%A1%E6%9C%89%E5%90%AF%E5%8A%A8%EF%BC%8C,%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98%E5%AF%BC%E8%87%B4%E7%9A%84
+
+  ```
+  sudo rm -rf /usr/local/hadoop/tmp/dfs
+  
+  mkdir -p /usr/local/hadoop/tmp/dfs/data
+  
+  ```
+
+* [hadoop](https://so.csdn.net/so/search?q=hadoop&spm=1001.2101.3001.7020) namenode -format
+
+
+
+
 
