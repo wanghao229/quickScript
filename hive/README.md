@@ -9,7 +9,13 @@
 
 
 #### 二进制文件安装
-* 123
+
+```
+#Hive
+export HIVE_HOME=/usr/local/apache-hive-3.1.3
+export PATH=$PATH:$HIVE_HOME/bin
+export CLASSPATH=$CLASSPATH:$HIVE_HOME/bin
+```
 
 
 
