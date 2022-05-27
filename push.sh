@@ -12,9 +12,11 @@ set now=%date% %time%
 echo %now%
 git commit -m "%now% %message%"
 echo;
- 
+
+echo $message 
+
 echo "Commit the changes to the remote git server"
-git push
+# git push
 echo;
  
 echo "Batch execution complete!"
