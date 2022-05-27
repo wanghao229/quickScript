@@ -29,3 +29,9 @@ bin/schematool -dbType derby -initSchema
 ##### java.net.URISyntaxException when starting HIVE
 * https://stackoverflow.com/questions/27099898/java-net-urisyntaxexception-when-starting-hive
 
+
+#### java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient
+* https://stackoverflow.com/questions/35449274/java-lang-runtimeexception-unable-to-instantiate-org-apache-hadoop-hive-ql-meta
+* hive --service metastore & 
+
+
