@@ -7,10 +7,15 @@ echo;
  
 echo "Commit the changes to the local repository"
 echo "please enter the commit info...."
-set /p message=
-set now=%date% %time%
-echo %now%
-git commit -m "%now% %message%"
+
+read message
+
+now=$(date "+%Y%m%d-%H%M%S")
+
+echo $now
+
+git commit -m "$now $message"
+
 echo;
 
 echo $message 
