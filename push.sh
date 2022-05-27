@@ -1,5 +1,5 @@
 echo "Start submitting code to the local repository"
-echo "The current directory is：%cd%"
+echo "The current directory is：$(pwd)"
 git add *
 echo;
  
