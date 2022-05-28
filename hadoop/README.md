@@ -21,7 +21,11 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 ```
 yum install -y java-1.8.0-openjdk-devel.x86_64
-hdfs namenode -format
+
+sudo rm -rf tmp/dfs
+mkdir -p tmp/dfs/data
+
+hadoop namenode -format
 ```
 
 ```
@@ -89,14 +93,9 @@ $ chmod 0600 ~/.ssh/authorized_keys
 
 * https://blog.csdn.net/zimojiang/article/details/80725084#:~:text=%E6%89%A7%E8%A1%8Cstart%2Ddfs.sh%E5%90%8E%EF%BC%8Cdatenode%E6%B2%A1%E6%9C%89%E5%90%AF%E5%8A%A8%EF%BC%8C,%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98%E5%AF%BC%E8%87%B4%E7%9A%84
 
-  ```
-  sudo rm -rf /usr/local/hadoop/tmp/dfs
   
-  mkdir -p /usr/local/hadoop/tmp/dfs/data
-  
-  ```
 
-* [hadoop](https://so.csdn.net/so/search?q=hadoop&spm=1001.2101.3001.7020) namenode -format
+
 
 
 
