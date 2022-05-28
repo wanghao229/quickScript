@@ -24,7 +24,7 @@ git commit -m "Update README.md  $message"
 
 echo;
 
-echo $message 
+echo "message:$message" 
 
 echo "Commit the changes to the remote git server"
 git push
