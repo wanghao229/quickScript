@@ -12,7 +12,7 @@ echo;
 echo "Commit the changes to the local repository"
 echo "please enter the commit info...."
 
-message=$0
+message=$1
 
 if test -z message
 then 
