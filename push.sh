@@ -16,7 +16,7 @@ message=$1
 
 echo "msg:$message"
 
-if test -z message
+if [[ -z "$message" ]];
 then 
   read message
 fi
@@ -29,7 +29,7 @@ echo;
 echo "message:$message" 
 
 echo "Commit the changes to the remote git server"
-# git push
+git push
 echo;
  
 echo "Batch execution complete!"
