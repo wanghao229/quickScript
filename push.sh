@@ -14,6 +14,8 @@ echo "please enter the commit info...."
 
 message=$1
 
+echo "msg:$message"
+
 if test -z message
 then 
   read message
@@ -27,7 +29,7 @@ echo;
 echo "message:$message" 
 
 echo "Commit the changes to the remote git server"
-git push
+# git push
 echo;
  
 echo "Batch execution complete!"
