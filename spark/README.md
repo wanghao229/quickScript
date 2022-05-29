@@ -29,9 +29,24 @@ cd /usr/local/spark-3.2.1-bin-hadoop3.2
 spark-submit --master spark://192.168.1.3:7077 --class class3.SogouResult --executor-memory 1g spark-demo-one.jar hdfs://localhost:9000/sogou/SogouQ1.txt hdfs://localhost:9000/class3/output3
 ```
 
+
+
+#### Spark SQL
+
+```
+bin/spark-sql --master spark://hadoop1:7077 --executor-memory 1g
+```
+
+
+
+
+
 #### 动态修改Docker端口
+
 * https://www.jianshu.com/p/6aefed2be1c7
 * 
+
+
 
 
 
@@ -49,5 +64,4 @@ spark-submit --master spark://192.168.1.3:7077 --class class3.SogouResult --exec
 * mac docker ~/Library/Containers/com.docker.docker/Data/vms/0/tty: No such file or directory解决办法
 * https://blog.csdn.net/m0_38112165/article/details/120116336
 * 
-
 

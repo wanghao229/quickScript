@@ -47,5 +47,16 @@ bin/schematool -dbType derby -initSchema
 
 
 
+#### OutOfMemoryError
+
+* https://aws.amazon.com/cn/premiumsupport/knowledge-center/emr-hive-outofmemoryerror-heap-space/#:~:text=Short%20description,the%20JVM%20or%20increase%20HADOOP_HEAPSIZE.
+
+* ```
+  /etc/hive/conf/hive-env.sh
+  export HADOOP_HEAPSIZE=2048
+  ```
+
+
+
 
 
