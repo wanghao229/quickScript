@@ -65,3 +65,11 @@ bin/spark-sql --master spark://hadoop1:7077 --executor-memory 1g
 * https://blog.csdn.net/m0_38112165/article/details/120116336
 * 
 
+
+
+#### Permission denied: user=dr.who, access=WRITE, inode=“/user/hive/warehouse
+
+*  hdfs dfs -chmod -R 777 /user
+
+
+
