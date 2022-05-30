@@ -37,6 +37,9 @@ docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 \
 #### 1.2重置密码
 
 * bin/elasticsearch-reset-password -u elastic
+  * New value: oZui4FId-ebc2sT=uJ3n
+* ./elasticsearch-setup-passwords interactive
+* https://blog.csdn.net/qq_41070393/article/details/120386313
 
 
 
