@@ -6,9 +6,56 @@
 3. 自己使用
 
 
-#### 安装
+#### Docker安装
 * https://www.jianshu.com/p/c971d5c21633
 * https://blog.csdn.net/qq_42996037/article/details/91343636
+
+#### 物理机安装
+
+* 下载：https://hbase.apache.org/downloads.html
+* 版本兼容：https://hbase.apache.org/book.html#hadoop
+
+```shell
+export HBASE_HOME=/usr/app/hbase-2.4.12
+export PATH=$HBASE_HOME/bin:$PATH
+
+source /etc/profile
+
+```
+
+* 编辑文件
+
+```
+vi conf/hbase-site.xml
+
+
+<configuration>
+ <property>
+    <name>hbase.rootdir</name>
+    <value>file:///home/hbase/rootdir</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/home/zookeeper/dataDir</value>
+  </property>
+  <property>
+    <name>hbase.unsafe.stream.capability.enforce</name>
+    <value>false</value>
+  </property>
+</configuration>
+
+```
+
+* 启动
+
+```
+start-hbase.sh
+
+```
+
+
+
+
 
 
 #### SpringBoot
