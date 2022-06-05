@@ -14,6 +14,13 @@
 
 * 下载：https://hbase.apache.org/downloads.html
 * 版本兼容：https://hbase.apache.org/book.html#hadoop
+* 安装：
+* https://blog.csdn.net/heiren_a/article/details/108176504 70%
+* https://www.imooc.com/article/308694/ 50%
+* 
+* https://blog.51cto.com/StarBigData/3643760 
+
+
 
 ```shell
 export HBASE_HOME=/usr/app/hbase-2.4.12
@@ -23,11 +30,10 @@ source /etc/profile
 
 ```
 
-* 编辑文件
+* 本
 
 ```
 vi conf/hbase-site.xml
-
 
 <configuration>
  <property>
@@ -42,6 +48,12 @@ vi conf/hbase-site.xml
     <name>hbase.unsafe.stream.capability.enforce</name>
     <value>false</value>
   </property>
+  
+  <property>
+ 		<name>hbase.master.info.port</name>
+	 <value>60010</value> # 使用 master 节点 60010 端口
+ </property>
+
 </configuration>
 
 ```
@@ -53,7 +65,7 @@ start-hbase.sh
 
 ```
 
-
+* zk启动慢，需要执行两次。
 
 
 
@@ -74,7 +86,7 @@ start-hbase.sh
 
 ---
 ### 问题
-#### Call to address=myhbase/127.0.0.1:16020 failed
+#### 1. Call to address=myhbase/127.0.0.1:16020 failed
 * https://blog.csdn.net/qqHJQS/article/details/96628601
 ```
 docker pull harisekhon/hbase
@@ -94,3 +106,16 @@ docker run -d -h myhbase \
         --name hbase \
         harisekhon/hbase
 ```
+
+
+
+#### 2. java.lang.IllegalArgumentException: object is not an instance of declaring class
+
+* hbase與hadoop版本兼容問題，強烈譴責hadoop生態圈耦合性
+
+* https://www.uj5u.com/qita/391416.html
+
+
+
+
+
