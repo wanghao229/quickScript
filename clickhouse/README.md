@@ -30,3 +30,13 @@ sudo "clickhouse-client-$LATEST_VERSION/install/doinst.sh"
 
 ```
 
+
+
+#### 源码编译安装
+
+* https://zhuanlan.zhihu.com/p/391898480
+* 
+
+#### Docker
+
+* Docker 安装包并不是一个很好的学习选择。
