@@ -30,7 +30,9 @@ sudo "clickhouse-client-$LATEST_VERSION/install/doinst.sh"
 
 ```
 
+#### 已编译安装
 
+* https://www.modb.pro/db/49076
 
 #### 源码编译安装
 
