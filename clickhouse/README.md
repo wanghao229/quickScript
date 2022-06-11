@@ -51,6 +51,8 @@ sudo "clickhouse-client-$LATEST_VERSION/install/doinst.sh"
 
 * CK
 
+  * 导入JSON：https://clickhouse.com/docs/en/faq/integration/json-import/ 
+
   ```
   cat 5m_Sales_Records.csv | clickhouse  client -d default  --format_csv_delimiter="," \
   --date_time_input_format=best_effort\
@@ -75,14 +77,14 @@ sudo "clickhouse-client-$LATEST_VERSION/install/doinst.sh"
   
   load data local infile '/Users/a11080178/Downloads/5m_Sales_Records.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\n' ignore 1 rows;
   
-  load data local infile '/Users/a11080178/Downloads/pp-complete.csv' into table uk_price_paid fields terminated by ',' enclosed by '"' lines terminated by '\n' (price,date,postcode1,type,is_new,duration,addr1,addr2,street,locality,town,district,county,category);
+  load data local infile '/Users/a11080178/Downloads/pp-complete.csv' into table uk_price_paid fields terminated by ',' enclosed by '"' lines terminated by '\n' (uuid,price,date,postcode1,type,is_new,duration,addr1,addr2,street,locality,town,district,county,category);
+  
   
   ```
 
   * 表
 
     ```
-     
      
      update uk_price_paid set postcode2 = postcode1;
     ```
