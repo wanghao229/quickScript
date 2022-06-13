@@ -30,7 +30,7 @@ source /etc/profile
 
 ```
 
-* 本
+* 本机安装
 
 ```
 vi conf/hbase-site.xml
@@ -63,9 +63,11 @@ vi conf/hbase-site.xml
 ```
 start-hbase.sh
 
+hbase-shell
+
 ```
 
-* zk启动慢，需要执行两次。
+* zk启动慢，需要==执行两次==。
 
 
 
@@ -75,6 +77,9 @@ start-hbase.sh
 
 ---
 ### 命令
+
+* http://c.biancheng.net/view/6530.html
+
 #### SCAN
 * https://generalthink.github.io/2018/12/17/hbase-scan-command/
 
