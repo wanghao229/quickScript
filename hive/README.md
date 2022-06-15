@@ -8,6 +8,7 @@
 #### 二进制文件安装
 
 * https://blog.csdn.net/zheng911209/article/details/105413578
+* https://www.cnblogs.com/shishanyuan/p/4721403.html 80%
 
 ```shell
 

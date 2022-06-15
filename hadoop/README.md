@@ -30,7 +30,10 @@ hadoop namenode -format
 
 ```
 cd /usr/local/hadoop-3.3.3/sbin
+
 ./start-dfs.sh
+./start-yarn.sh
+
 ```
 
 #### 文件配置

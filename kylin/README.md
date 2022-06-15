@@ -29,8 +29,6 @@
 
 
 
-
-
 ## 问题
 
 #### NoClassDefFoundError: org/apache/commons/configuration/ConfigurationE
@@ -40,5 +38,24 @@
 
 
 
+#### 排查文件参考
+
+* $KYLIN_HOME/logs目录的kylin.log和kylin.out
 
 
+
+#### Cannot start job scheduler due to lack of job lock
+
+* https://romandata.github.io/2020/08/15/Apache-Kylin/Apache-Kylin%E5%88%9D%E6%8E%A2/
+
+#### should not be the root cause of XXX
+
+* 反思
+
+#### Unable to resolve address: sandbox.hortonworks.com:2181
+
+* 127.0.0.1 sandbox.hortonworks.com
+
+#### File does not exist ....... fairscheduler.xml
+
+* https://lists.apache.org/thread/s7jnslsp79tvl71p07jbz00kpg96qm72

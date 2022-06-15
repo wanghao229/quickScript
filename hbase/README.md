@@ -63,7 +63,7 @@ vi conf/hbase-site.xml
 ```
 start-hbase.sh
 
-hbase-shell
+hbase shell
 
 ```
 

@@ -33,7 +33,10 @@ spark-submit --master spark://192.168.1.3:7077 --class class3.SogouResult --exec
 
 #### Spark SQL
 
+* https://www.cnblogs.com/shishanyuan/p/4723604.html
+
 ```
+sbin/start-all.sh
 bin/spark-sql --master spark://hadoop1:7077 --executor-memory 1g
 ```
 
@@ -45,8 +48,6 @@ bin/spark-sql --master spark://hadoop1:7077 --executor-memory 1g
 
 * https://www.jianshu.com/p/6aefed2be1c7
 * 
-
-
 
 
 
