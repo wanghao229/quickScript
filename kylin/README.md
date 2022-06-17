@@ -3,6 +3,7 @@
 #### 安装
 
 * 官网：https://kylin.apache.org/cn/development/dev_env.html ，官网，30%
+* 文档：https://kylin.apache.org/cn/docs/
 * 下载：https://kylin.apache.org/download/，
 * 参考：https://juejin.cn/post/6844903657218310151，50%
 * 基于 MySQL 的 Metastore 配置,https://kylin.apache.org/cn/docs31/tutorial/mysql_metastore.html

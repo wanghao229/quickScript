@@ -29,7 +29,16 @@ export PATH=$PATH:$HIVE_HOME/bin
 export CLASSPATH=$CLASSPATH:$HIVE_HOME/bin
 ```
 
+```
+hive --service metastore &
+
+hive --service hiveserver &
+```
+
+
+
 ##### Mysql
+
 * https://www.lilinchao.com/archives/1693.html 
 ```shell
 bin/schematool -dbType derby -initSchema
