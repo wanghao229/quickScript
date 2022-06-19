@@ -7,6 +7,7 @@
 * 下载：https://kylin.apache.org/download/，
 * 参考：https://juejin.cn/post/6844903657218310151，50%
 * 基于 MySQL 的 Metastore 配置,https://kylin.apache.org/cn/docs31/tutorial/mysql_metastore.html
+* 参考：[Apache Kylin 部署之不完全指南 ](https://www.cnblogs.com/en-heng/p/5170876.html) 30%
 
 #### Support Hadoop Version Matrix of Kylin 4
 

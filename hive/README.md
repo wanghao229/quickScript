@@ -30,9 +30,10 @@ export CLASSPATH=$CLASSPATH:$HIVE_HOME/bin
 ```
 
 ```
-hive --service metastore &
+nohup hive --service metastore &
 
-hive --service hiveserver &
+nohup hive --service hiveserver &
+
 ```
 
 
@@ -65,6 +66,15 @@ bin/schematool -dbType derby -initSchema
   /etc/hive/conf/hive-env.sh
   export HADOOP_HEAPSIZE=2048
   ```
+
+
+
+#### 错误: 找不到或无法加载主类org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+
+* https://blog.csdn.net/qq_41684957/article/details/81710190
+* hadoop classpath
+
+
 
 
 
