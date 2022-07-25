@@ -10,6 +10,8 @@
 
 
 
+
+
 #### 1.1 Docker
 
 ```
@@ -34,7 +36,15 @@ docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 \
 
 
 
-#### 1.2重置密码
+#### 1.2 MAC安装
+
+* https://blog.csdn.net/lwc5411117/article/details/105026179. MAC 安装
+
+
+
+
+
+#### 2.1重置密码
 
 * bin/elasticsearch-reset-password -u elastic
   * New value: oZui4FId-ebc2sT=uJ3n
@@ -43,10 +53,18 @@ docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 \
 
 
 
-#### 1.3 单机映射文件
+#### 2.2 单机映射文件
 
 * https://blog.csdn.net/qq_27991405/article/details/109361136
-* 
+
+
+
+#### 2.3 中文分词器
+
+* https://www.cnblogs.com/rixian/p/10746600.html , 
+* https://www.cnblogs.com/huangxiufen/p/12461191.html 修改索引类型
+
+
 
 ## 使用
 
