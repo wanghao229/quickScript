@@ -7,9 +7,12 @@
 #### mac 安装
 
 * https://segmentfault.com/a/1190000022561851
-* 
 
 
+
+#### 压测
+
+* https://www.cnblogs.com/sunbr/p/14334718.html
 
 
 
