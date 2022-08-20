@@ -8,7 +8,9 @@
 修改JVM
 * https://www.cnblogs.com/zzhaolei/p/11067786.html
 
+MAC安装
 
+* https://blog.csdn.net/lwc5411117/article/details/105026179. MAC 安装
 
 
 
@@ -32,15 +34,12 @@ docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 \
  
  
  -v ~/Documents/es-1/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \
+ 
 ```
 
 
 
-#### 1.2 MAC安装
-
-* https://blog.csdn.net/lwc5411117/article/details/105026179. MAC 安装
-
-
+#### 2.0 MAC安装
 
 
 
