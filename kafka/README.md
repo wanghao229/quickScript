@@ -20,6 +20,8 @@
 
 * kafka——消费者原理解析，https://www.jianshu.com/p/80528bc27ad5
 
+* kafka-- producer 原理， https://juejin.cn/post/6966788041767649317
+
 
 
 #### 源码调试
